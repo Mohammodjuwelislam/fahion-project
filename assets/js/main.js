@@ -59,6 +59,14 @@
 				}
 			}
 		});
+
+		$(".manu-trigger").on("click", function() {
+			$(".off-canvar-manu, .off-canvar-ovarlay").addClass("active");
+			return false;
+		});
+		$(".manu-closs, .off-canvar-ovarlay").on("click", function() {
+			$(".off-canvar-manu, .off-canvar-ovarlay").removeClass("active");
+		});
 	
 	})
 })(jQuery);
